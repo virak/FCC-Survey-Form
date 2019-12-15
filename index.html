@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cat Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">What type of cat do you like ?</h1>
+        <p id="description">Tell us the type of cat you like and if you already have a cat with this super survey form
+        </p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label" class="labelTitleFormStyle">Your name: </label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="For example: Henri Dupont" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label" class="labelTitleFormStyle">Your email: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="your-email@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number" class="labelTitleFormStyle">How many cats do you currently have ?<span class="clue">(optional)</span></label>
+                <input type="number" name="catNumber" id="number" min="0" max="99" class="form-control" placeholder="Number of cat owned" />
+            </div>
+            <div class="form-group">
+                <p class="labelTitleFormStyle">What is your favourite color for a cat ?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select color</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black">Black</option>
+                    <option value="itsPrivate">It's private 😇</option>
+                    <option value="noneOfTheAbove">None of the above</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="labelTitleFormStyle">Are you planning to get a cat in the coming month?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="getting-cat-coming-month" id="getting-cat-radio1" value="yes" />
+                    <label class="form-check-label" for="getting-cat-radio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="getting-cat-coming-month" id="getting-cat-radio2" value="may-be" />
+                    <label class="form-check-label" for="getting-cat-radio2">May Be</label>
+                </div>
+                <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="getting-cat-coming-month" id="getting-cat-radio3" value="no" />
+                        <label class="form-check-label" for="getting-cat-radio3">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p class="labelTitleFormStyle">What are the reason you would like a cat ?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="reason-like-cat-coming-month" id="reason-like-cat-checkbox1" value="cute" />
+                    <label class="form-check-label" for="reason-like-cat-checkbox1">Cute</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="reason-like-cat-coming-month" id="reason-like-cat-checkbox2" value="they-sleep" />
+                    <label class="form-check-label" for="reason-like-cat-checkbox2">They sleep</label>
+                </div>
+                <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="reason-like-cat-coming-month" id="reason-like-cat-checkbox3" value="cheap" />
+                        <label class="form-check-label" for="reason-like-cat-checkbox3">Cheap</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p class="labelTitleFormStyle"> What is the most important thing for a cat? </p>
+                <select id="most-important" name="mostImportant" class="form-control" required>
+                    <option disabled selected value>Select a thing</option>
+                    <option value="fourLegs">Four legs</option>
+                    <option value="oneTail">One tail</option>
+                    <option value="twoEyes">Two eyes</option>
+                    <option value="nothing">Nothing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="labelTitleFormStyle" for="comments">A little comment ?</label>
+                <textarea class="form-control" id="comments" rows="3" placeholder="Enter comments here please"></textarea>
+            </div>
+              
+            <button type="submit" class="btn btn-secondary btn-lg btn-block" id="submit">Submit</button>
+        </form>
+
+        <p id="thankYouContainer">* Thank you for taking the time to response to our survey. Have a great day 😀</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" >
+    </script>
+</body>
+
+</html>
